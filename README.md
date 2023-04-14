@@ -1,1 +1,1 @@
-# instititutehgost
+# institutehgost
