@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de registro</title>
+  <style>
+     body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+     .signupSection {
+        background: url(https://img.freepik.com/vector-premium/fondo-cielo-nocturno-nubes-estrellas_116220-98.jpg);
+        background-size: 100% 100%;
+        position: absolute;
+        top: 50%; left: 50%; 
+        transform: translate(-50%, -50%); 
+        width: 1500px; 
+        height: 900px; 
+        text-align: center ; 
+        display: flex; 
+        color: white; 
+        box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+      }
+     .info { 
+        width: 50%; 
+        background: rgba(20, 20, 20, .8); 
+        padding: 100px 0; 
+        border-right: 5px solid rgba(30, 30, 30, .8);
+      }
+     p {
+        padding-top: 20px; 
+        font-family: times; 
+        font-size: 80px;
+      }
+     h1 {
+        padding-top: 20px; 
+        font-family: times; 
+        font-size: 40px;
+      }
+     .signupForm {
+        width: 50%; 
+        padding: 260px 0; 
+        background: rgba(20, 40, 40, .8); 
+        transition: .10s;
+      }
+     .inputFields {
+        margin: 15px 0;
+        font-size: 20px;
+        padding: 8px;
+        width: 300px;
+        border: 1px solid rgba(10, 180, 180, 1);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: rgba(20, 20, 20, .2);
+        color: white;
+        outline: none;
+      }
+     .noBullet {
+        list-style-type: none; 
+        padding: 0;
+      }
+     #Enviar {
+        border: 1px solid rgba(10, 180, 180, 1);
+        background: rgba(20, 20, 20, .6); 
+        font-size: 18px; 
+        color: white;
+        margin-top: 20px;
+        padding: 10px 50px;
+        cursor: pointer;
+        transition: .4s;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="signupSection">
+    <div class="info">
+      <p>Institute Ghost</p>
+      <img src="https://i.ibb.co/8YFWsSY/My-project-1.png" alt="Logo" width="550" height="300">
+    </div>
+    <form action="/registro" method="POST" class="signupForm" name="signupform" id="registro-form">
+      <h1>Crea un correo</h1>
+      <ul class="noBullet">
+       <li>
+          <label for="Nombre"></label>
+          <input type="text" class="inputFields" id="nombre" name="nombre" placeholder="Nombre" value="" oninput="returnuserNameValidation(this.value)" required/>
+       </li>
+       <li>
+          <label for="Apellido"></label>
+          <input type="apellido" class="inputFields" id="apellido" name="apellido" placeholder="Apellido" value="" oninput="return passwordValidation(this.value)" required/>
+       </li>
+    
+       <li id="center-btn">
+         <input type="submit" id="Enviar" name="Enviar" alt="Enviar" value="Enviar">
+       </li>
+      </ul>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+  <style>
+     body {
+        margin: 0; 
+        padding: 0; 
+        overflow: hidden;
+      }
+     .registro {
+        background: url(https://img.freepik.com/vector-premium/fondo-cielo-nocturno-nubes-estrellas_116220-98.jpg); 
+        background-size: 100% 100%; 
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        width: 1500px; 
+        height: 900px; 
+        text-align: center ; 
+        display: flex; 
+        color: white; 
+        box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+      }
+     .info { 
+        width: 100%; 
+        background: rgba(20, 20, 20, .8); 
+        padding: 180px 0; 
+        border-right: 5px solid rgba(30, 30, 30, .8);
+      }
+     p {
+        font-family: times; 
+        font-size: 30px;
+      }
+     h1 {
+        font-family: times;
+        font-size: 80px;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="registro">
+    <div class="info">
+      <h1>¡Registro exitoso!</h1>
+      <p>Tu nombre es: {{ nombre }}</p>
+      <p>Tu apellido es: {{ apellido }} </p>
+      <p>Tu correo electrónico es: {{ correo }} </p>
+      <p>Tu contraseña es: {{ contraseña }} </p>
+    </div>
+</body>
+
+</html>
